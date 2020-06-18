@@ -9,11 +9,11 @@ Example de criação usando o module.
 
 ```hcl
 module "new_registration" {
-    source  = "git@gitlab.uoldiveo.intranet:ump/devtools/terraform-azure-modules/terraform-azure-app_registrations.git?ref=v1.0"
+    source  = "../"
 
-    name            = "CustomerName-CompassoUOL-MGMTCost"
-    homepage        = "https://apps.cloudhealthtech.com"
-    redirect_uri    = [ "https://apps.cloudhealthtech.com" ]
+    name            = "Name of app registration"
+    homepage        = "https://app.test.com"
+    redirect_uri    = [ "https://app.test.com" ]
 
     expires = "2025-03-25T01:02:03Z"
 
